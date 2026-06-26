@@ -37,9 +37,39 @@ else:
 # p
 # if a number is a multiple of 7 or not.
 
-num = int(input("enter the number: "))
+'''num = int(input("enter the number: "))
 if num % 7 == 0:
     print(num,"is divisible by 7")
 else:
-    print(num,"is not divisible by 7")
-    
+    print(num,"is not divisible by 7")'''
+
+
+
+'''age = int(input("enter your age:"))
+
+if age <= 13:
+    print("you are child")
+elif age > 13 and age < 18:
+    print("you are teenager")
+elif age >= 18:
+    print("you are adult")'''
+
+'''username = input("enter ypur username: ")
+password = input("enter your password: ")
+
+user_name = "admin"
+user_pass ="123"
+
+if username == user_name and password == user_pass:
+    print("login successful...")
+else:
+    print("Invalid Credientials.. try again..")'''
+
+# print odd even num
+
+n = int(input("enter any number: "))
+
+if n % 2 == 0:
+    print(n,"is even number")
+else:
+    print(n,"is odd number")
