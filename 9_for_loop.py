@@ -50,10 +50,16 @@ for i in str1:
 
 # wap to find factorials 
 n= 10
-fact = 1
+'''fact = 1
 for i in range(1,10):
     fact *= i
-print(fact)
+print(fact)'''
+
+
+sum = 0
+for i in range(11):
+    sum += i
+print(sum)
 
 
 

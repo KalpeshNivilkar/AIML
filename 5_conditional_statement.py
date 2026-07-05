@@ -67,9 +67,28 @@ else:
 
 # print odd even num
 
-n = int(input("enter any number: "))
+'''n = int(input("enter any number: "))
 
 if n % 2 == 0:
     print(n,"is even number")
 else:
-    print(n,"is odd number")
+    print(n,"is odd number")'''
+
+
+# multiplication table of any n 
+'''n = int(input("enter ay number:"))
+i = 1
+while i <= 10:
+    print(n * i)
+    i += 1'''
+
+
+# break 
+i = 1
+while i <= 10:
+    if i % 6 == 0:
+        break
+    print(i)
+    i += 1
+print("os loop")
+   
