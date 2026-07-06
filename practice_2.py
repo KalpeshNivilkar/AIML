@@ -73,7 +73,7 @@ print(count_num(n))'''
 
 # write a function to return sum  of digit
 
-def sum_of_digit(num):
+'''def sum_of_digit(num):
     summ = 0
     while num > 0:
         digit = num % 10
@@ -81,11 +81,133 @@ def sum_of_digit(num):
         num = num // 10
     return summ
 num = 312
-print(sum_of_digit(num))
+print(sum_of_digit(num))'''
+
+# Write a program to print all numbers from 1 to 100 that are divisible by both 3 
+# and 5.
+
+'''def divisible_num():
+    for i in range(1,100):
+        if i % 3 == 0 and i % 5 == 0:
+            print(i)
+divisible_num()'''
 
 
-  
-    
+#  Design a program to continuously input a number  from user & print if it is 
+# positive or negative until the user enters “Quit”.
+
+'''while True:
+    user_input = input("enter a number or Quit: ")
+    if user_input == "Quit":
+        print("program end...")
+        break
+    num = int(user_input)
+    if num > 0:
+        print(num,"is positive.")
+    else:
+        print(num,"is negative")
+'''
+   
+        
+# Letʼs create a Simple  
+# Calculator
+# calculator(a, b, operation)
+# that performs arithmetic operations. Create 
+# a function  that performs addition, subtraction, 
+# multiplication, or division based on the  parameter.  
+# operation
+# [ 
+# operation ‘+’ ‘-’ '*’ ‘/’
+# parameter can have values ,  ,  & .
+
+
+'''def calculator(a, b, operation):
+    if operation == '+':
+        print("addition of a and b is", a+b)
+    elif operation == '-':
+        print("subtraction of a and b is", a-b)
+    elif operation == '*':
+        print("mul of a and b is", a*b)
+    elif operation == '/':
+        if b == 0:
+            print("divisible by zero is not allow...") 
+        else:
+            print("div of a and b is", a/b)
+    else:
+        print("Invalid Operation...")
+        print("choose +, -, *, /")
+
+a = int(input("enter the num1 : "))
+b = int(input("enter the num2 :"))
+operation = input("enter the operand to perform the operation,(ig: +, -, *, /):")
+calculator(a,b,operation)'''
+
+#  Write a function  
+# prime(n)
+# True n
+# that returns  if  is a prime number and 
+# False
+# [ 
+# Hint- 
+# otherwise, using a loop.
+# non-Prime
+# n
+# 2
+# 1. We only check prime for 2 or numbers greater than 2.  is the smallest 
+# prime number.
+# 2. A  number, , will always get divided by atleast one number in 
+# range [2, n-1].
+# 9 9
+# Eg - For number  weʼll check in range (2, 8) & itʼll get divided by 3. So  is 
+# non-prime & weʼll return false for it.
+# For number  weʼll check in range (2, 6) & it wonʼt get divided by any. So 
+# is prime & weʼll return true for it. ]
+
+# def is_prime(n):
+#     for i in range(2,n-1):
+#         if n % i == 0:
+#             return False
+#     return True
+# n = int(input("enter the number:"))   
+# print(is_prime(n))
+
+
+# Letʼs create a “
+# Number Guessing Game
+# ”.  Given a secret number (already 
+# decided by you), write a program that asks the user to guess it and prints:
+# •
+ 
+# •
+ 
+# •
+ 
+# "Too high"
+# "Too low"
+# if the guess is above the number
+# if the guess is below
+# "Correct!"
+# if the guess matche
+
+def number_gasing_game():
+    secret_num = 100
+    while True:
+        n = int(input("enter the number:"))
+
+        if n == 100:
+            print("you are won...")
+            break
+        elif n >= secret_num:
+            print("too high..")
+            # continue
+        elif n <= secret_num:
+            print("too low...")
+            # continue
+        else:
+            print("Invalid choice!")
+            print("enter the number digit, ig:23,119")
+
+number_gasing_game()
        
         
 
