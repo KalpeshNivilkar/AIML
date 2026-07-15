@@ -199,10 +199,10 @@ def number_gasing_game():
             break
         elif n >= secret_num:
             print("too high..")
-            # continue
+            
         elif n <= secret_num:
             print("too low...")
-            # continue
+            
         else:
             print("Invalid choice!")
             print("enter the number digit, ig:23,119")
