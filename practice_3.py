@@ -253,6 +253,8 @@ sen = input("enter the string: ")
 print(sen.count(" "))
 
 
+
+
     
 
 
