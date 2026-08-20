@@ -1,4 +1,4 @@
-# design instance, class and static methods
+'''# design instance, class and static methods
 
 class Product:
     count = 0
@@ -23,4 +23,14 @@ p2 = Product("phone",20000)
 p1.get_info()
 p2.get_info()
 p1.get_count()
-p1.cal_discount(p1.price,20)
+p1.cal_discount(p1.price,20)'''
+
+
+class Student:
+    college_name = "ABC"
+    year = "4th"
+    subject = "python"
+
+for std in range(30):
+    std = Student()
+    print(std.college_name, std.year, std.subject)
