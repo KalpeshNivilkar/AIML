@@ -25,6 +25,7 @@ p2.get_info()
 p1.get_count()
 p1.cal_discount(p1.price,20)'''
 
+# make a class of student and make 30 student objects
 
 class Student:
     college_name = "ABC"
@@ -34,3 +35,4 @@ class Student:
 for std in range(30):
     std = Student()
     print(std.college_name, std.year, std.subject)
+

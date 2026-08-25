@@ -28,7 +28,9 @@ class Teacher:
         self.subject = subject    # same attribute
 
 tec = Teacher("amit",30, "java")
-print(tec.name, tec.age, tec.college_name,tec.subject)
+print(tec.name, tec.age, tec.college_name,tec.subject)  #ans : amit 30 VIT java ............ so it does not take class attribute becauce i called it using the object.
+
+
 
 
 
