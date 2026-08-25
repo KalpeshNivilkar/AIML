@@ -1,1 +1,0 @@
-print(Student.name, Student.age, Student.college_name)   
