@@ -34,7 +34,8 @@ p1.cal_discount(p1.price,10)
 # The total number of product is 2
 # The price of laptop is 30000
 # The total discount is 27000.0
-#i like to learn this concept..
+#i like to learn this concept..so nice to learn this concept
+
 
 
         
