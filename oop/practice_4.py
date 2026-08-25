@@ -1,4 +1,4 @@
-# product store 
+'''# product store 
 
 class Product:
     count = 0
@@ -22,7 +22,7 @@ p1 = Product("laptop", 20000)
 p2 = Product("TV", 10000)
 
 
-p1.cal_discount(p1.price,10)
+p1.cal_discount(p1.price,10)'''
 
 
 
@@ -58,7 +58,42 @@ a2 = Bank_account(102,"aditya",30000)
 a1.deposite(5000)
 a2.withdraw(5000)
 a1.check_balance()'''
- 
+
+
+
+#practice code 
+
+class Product:
+
+    count = 0
+
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+        Product.count += 1
+    
+    def get_info(self):
+        print(f"This product {self.name} is at {self.price}")
+
+    @classmethod
+    def count_product(cls):
+        print(f"the total count of product is :{cls.count}")
+
+    @staticmethod
+    def discount(price, percentage):
+        print(f"the total discount is {price - (price * percentage / 100)}")
+
+
+p1 = Product("TV", 20000)
+p2 = Product("Phone", 20000)
+p3 = Product("iPhone", 25000)
+p1.get_info()
+p2.get_info()
+p1.discount(p1.price,10)
+Product.count_product()
+
+
+
 
 
         
