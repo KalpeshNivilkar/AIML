@@ -37,4 +37,27 @@ class Teacher:
 
 t1 = Teacher("Sahil",20_000)
 t1.show_data()
-print(t1.name, t1.__salary) #output: it throws an error
+# print(t1.name, t1.__salary) #output: it throws an error
+
+#Getter and Setter method 
+class Employee:
+    def __init__(self, salary):
+        self.__salary = salary    #private attribute
+
+    def get_salary(self):         # getter method
+        print(self.__salary)
+
+    def set_salary(self, amount): # setter method
+        if amount > 0:
+            self.__salary += amount
+            print(self.__salary)
+        else:
+            print("you entered invalid salary...")
+    
+
+e1 = Employee(10_000)
+e1.get_salary()
+e1.set_salary(10_000)
+    
+    
+
