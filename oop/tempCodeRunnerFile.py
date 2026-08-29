@@ -1,0 +1,1 @@
+Father.__init__(self.name)

@@ -85,10 +85,40 @@ t1 = Teacher()
 t1.work()
 t1.work_in_office()
 
+# multiple inheritance
+class Father:
+    def __init__(self,f_name):
+        self.f_name = f_name
+    def f_info(self):
+        print(f"name of father is : {self.f_name}")
 
-# multiple inheritanse
+class Mother:
+    def __init__(self, m_name):
+        self.m_name = m_name
+    def m_info(self):
+        print(f"name of mother is : {self.m_name}")
 
-class GrandFather:
+class Son(Mother,Father):
+    def __init__(self, f_name,m_name, s_name):
+        super().__init__(m_name)
+        Father.__init__(self, f_name)
+        self.s_name = s_name
+
+    def s_info(self):
+        print(f"name of father is {self.f_name}")
+        print(f"name of mother is :{self.m_name}")
+        print(f"name of son is {self.s_name}")
+
+s1 = Son("subhash","kashi","kalpesh")
+s1.f_info()
+s1.m_info()
+s1.s_info()
+        
+
+
+# multilevel inheritanse
+
+'''class GrandFather:
     def __init__(self, gf_name, gf_age):
         self.gf_name = gf_name
         self.gf_age = gf_age
@@ -116,5 +146,5 @@ class Father(GrandMother):
 f1 = Father("ganapat",70,"sita",65,"subhash")
 f1.get_gf_info()
 f1.get_gm_info()
-f1.get_father_info()
+f1.get_father_info()'''
     
