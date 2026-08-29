@@ -70,3 +70,51 @@ class Employees_details(Employees):
 e1 = Employees_details("amit",33, 20_000)
 e1.get_info()
 
+
+# another example of single inheritense
+
+class Employees:
+    def work(self):
+        print("employees are working..")
+
+class Teacher(Employees):
+    def work_in_office(self):
+        print("they are working out in the office..")
+
+t1 = Teacher()
+t1.work()
+t1.work_in_office()
+
+
+# multiple inheritanse
+
+class GrandFather:
+    def __init__(self, gf_name, gf_age):
+        self.gf_name = gf_name
+        self.gf_age = gf_age
+
+    def get_gf_info(self):
+        print(f"Grandfather name is {self.gf_name} and his age : {self.gf_age} years...")
+
+class GrandMother(GrandFather):
+    def __init__(self, gf_name, gf_age, gm_name, gm_age):
+        super().__init__(gf_name, gf_age)
+        self.gm_name = gm_name
+        self.gm_age = gm_age
+
+    def get_gm_info(self):
+        print(f"grandfather name is {self.gf_name} and grandmother name is {self.gm_name}")
+
+class Father(GrandMother):
+    def __init__(self, gf_name, gf_age, gm_name, gm_age,father_name):
+        super().__init__(gf_name, gf_age, gm_name, gm_age)
+        self.father_name = father_name
+
+    def get_father_info(self):
+        print(f"name of grandfather is {self.gf_name}, name of grandmother is {self.gm_name} and father name is {self.father_name}")
+
+f1 = Father("ganapat",70,"sita",65,"subhash")
+f1.get_gf_info()
+f1.get_gm_info()
+f1.get_father_info()
+    
