@@ -118,7 +118,7 @@ s1.s_info()
 
 # multilevel inheritanse
 
-'''class GrandFather:
+class GrandFather:
     def __init__(self, gf_name, gf_age):
         self.gf_name = gf_name
         self.gf_age = gf_age
@@ -146,5 +146,5 @@ class Father(GrandMother):
 f1 = Father("ganapat",70,"sita",65,"subhash")
 f1.get_gf_info()
 f1.get_gm_info()
-f1.get_father_info()'''
+f1.get_father_info()
     
