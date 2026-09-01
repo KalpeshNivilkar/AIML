@@ -1,1 +1,1 @@
-Father.__init__(self.name)
+Book.count += 1
