@@ -44,7 +44,7 @@ acc1.check_balance()'''
 
 # Q2
 
-class Book:
+'''class Book:
     count = 0
 
     def __init__(self, title, author):
@@ -52,8 +52,6 @@ class Book:
         self.author = author  
         self.list_of_review = []
         
-        
-
     def get_info(self):
         print(f"The name of Book : {self.title}, The author : {self.author}, list_of_review :{self.list_of_review}") 
 
@@ -77,5 +75,72 @@ b1.add_review("so deep thought...")
 b1.count_review()
 b1.add_review("so deep thought...")
 b1.count_review()
-b1.display_all_review()
+b1.display_all_review()'''
 
+# Q3
+
+'''class Student:
+    def __init__(self,name, roll_no, marks):
+        self.__name = name
+        self.__roll_no = roll_no
+        self.__marks = marks
+
+    def get_info(self):
+        print(f"Name of Student: {self.__name}, Roll no: {self.__roll_no}, Marks: {self.__marks}")
+
+    def set_marks(self, marks):
+       
+        if marks < 0 or marks > 100:
+            print(f"{marks}: Negative marks not allow...")
+        else:
+            self.__marks = marks
+
+    def set_roll_no(self, roll_no):
+        
+        if roll_no < 0 or roll_no > 100:
+            print(f"{roll_no} is not found...")
+        else:
+            self.__roll_no = roll_no
+        
+
+    def set_name(self, name):
+        
+        if name == "":
+            print(f"Student name is not found!")
+        else:
+            self.__name = name
+        
+
+s1 = Student("kalpesh", 450, 100)
+s1.get_info()
+s1.set_marks(23)
+s1.set_name("avina")
+s1.set_roll_no(30)
+s1.get_info()
+'''
+
+# Q4
+class Shape:
+    def area(self):
+        print("Area of shape")
+
+class Circle(Shape):
+    def __init__(self,radius):
+        self.radius = radius
+
+    def area(self):
+        print("The area of circle is", 3.14 * self.radius *self.radius)
+
+class Rectangular(Shape):
+    def __init__(self,length,width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        print("Area of rectangular:", self.length * self.width)
+
+c = Circle(5)
+r = Rectangular(10,10)      
+
+c.area()
+r.area()

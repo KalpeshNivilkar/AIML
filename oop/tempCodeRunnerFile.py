@@ -1,1 +1,2 @@
-Book.count += 1
+else:
+            print(self.get_info)
