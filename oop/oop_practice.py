@@ -120,7 +120,7 @@ s1.get_info()
 '''
 
 # Q4
-class Shape:
+"""class Shape:
     def area(self):
         print("Area of shape")
 
@@ -143,4 +143,7 @@ c = Circle(5)
 r = Rectangular(10,10)      
 
 c.area()
-r.area()
+r.area()"""
+
+
+
