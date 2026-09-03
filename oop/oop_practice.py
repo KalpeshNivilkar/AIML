@@ -145,5 +145,64 @@ r = Rectangular(10,10)
 c.area()
 r.area()"""
 
+# Q5
+
+"""class Vehicle:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+    def get_info(self):
+        print(f"Name of Brand: {self.brand} Name of Model: {self.model}")
+
+class Car(Vehicle):
+    def __init__(self, brand, model, seats):
+        super().__init__(brand, model)
+        self.seats = seats
+
+    def car_info(self):
+        print(f"Brand: {self.brand}, model: {self.model}, seats: {self.seats} ")
+
+class Bike(Vehicle):
+    def __init__(self, brand, model, engine_cc ):
+        super().__init__(brand, model)
+        self.engine_cc = engine_cc
+
+    def bike_info(self):
+        print(f"Brand: {self.brand},model: {self.model}, engine_cc:{self.engine_cc} ")
+
+b1 = Bike("honda","bike_model",125)
+b1.bike_info()
+c1 = Car("suzuki", "new", 4)
+c1.car_info()
+"""
+from abc import ABC, abstractmethod
+
+class Employee(ABC):
+    @abstractmethod
+    def calculate_salary(self):
+        pass
+
+class Intern(Employee):
+    def calculate_salary(self):
+        print("salary: 20_000")
+
+class FullTimeEmployee(Employee):
+    def calculate_salary(self):
+        print("salary: 50_000")
+
+class ContractEmployee(Employee):
+    def calculate_salary(self):
+        print("salary: 30_000")
+
+c1 = ContractEmployee()
+c1.calculate_salary()
+
+    
+    
+
+
+
+
 
 
