@@ -62,7 +62,7 @@ a1.check_balance()'''
 
 
 #practice code 
-
+'''
 class Product:
 
     count = 0
@@ -90,7 +90,58 @@ p3 = Product("iPhone", 25000)
 p1.get_info()
 p2.get_info()
 p1.discount(p1.price,10)
-Product.count_product()
+Product.count_product()'''
+
+
+# Q8
+
+'''class Player:
+    player_count = 0
+
+    def __init__(self, name, level):
+        self.name = name
+        self.level = level
+        Player.player_count += 1
+
+    def get_info(self):
+        print(f"Name: {self.name}, Level = {self.level}, Players Count: {Player.player_count}")
+
+p1 = Player("kalpesh",10)
+p1 = Player("kalpesh",10)
+p3 = Player("kalpesh",103)
+p1.get_info()'''
+
+# Q9 
+class Herbivore:
+    def eat_plants(self):
+        print("Eats plants")
+
+
+class Carnivore:
+    def eat_meat(self):
+        print("Eats meat")
+
+
+class Omnivore:
+    def eat_both(self):
+        print("Eats plants and meat")
+
+
+class Bear(Herbivore, Carnivore, Omnivore):
+    def __init__(self, name):
+        self.name = name
+
+    def get_info(self):
+        print(f"Name: {self.name}")
+
+
+b1 = Bear("Bear")
+b1.get_info()
+b1.eat_plants()
+b1.eat_meat()
+b1.eat_both()
+
+
 
 
 
