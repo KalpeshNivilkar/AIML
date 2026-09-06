@@ -16,7 +16,7 @@ with open("Sample.txt","r") as f:
     line = 1
 
     while data:
-        if "python" in data:
+        if "python" in data.lower():
             print(f"word found at {line} line")
             break
         data = f.readline()
