@@ -5,3 +5,4 @@ print("file mode:", f.mode)
 print("Is file closed", f.closed)
 f.close()
 print("Is file closed:", f.closed)
+
