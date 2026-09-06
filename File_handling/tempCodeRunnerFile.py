@@ -1,5 +1,11 @@
-f = open("sample.txt","r+")
-data = f.read()
-f.write("I am from raigad.")
+data = True
+word = "python"
+line = 1
 
-print(data)
+with open("sample.txt","r") as f:
+    while data:
+        data = f.readline()
+        if word in data:
+            print(f"{word} is found in line no :{line}")
+            break
+        line += 1
