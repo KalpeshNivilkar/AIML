@@ -21,3 +21,5 @@ with open("Sample.txt","r") as f:
             break
         data = f.readline()
         line += 1
+
+
