@@ -1,0 +1,5 @@
+2026-09-08 10:30:15 - Program started
+2026-09-08 10:31:02 - User logged in
+2026-09-08 10:32:10 - File opened
+2026-09-08 10:35:45 - Error: File not found
+program run successfully

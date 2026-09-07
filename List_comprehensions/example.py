@@ -25,3 +25,16 @@ print(even_num)
 numbers = [1, 2, 3, 4, 5]
 even_odd = ["Even" if x % 2 == 0 else "odd" for x in numbers]
 print(even_odd)
+
+# Q3.
+
+# Create a program that:
+# 1. Has a list of numbers: 
+# [5, 10, 15, 20, 25]
+# 2. Uses a list comprehension to create a new list with only numbers greater 
+# than 15
+# 3. Prints the new list
+
+numbers = [5, 10, 15, 20, 25]
+new_list = [nums for nums in numbers if nums > 15]
+print(new_list)

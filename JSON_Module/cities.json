@@ -1,0 +1,5 @@
+cities = {
+    "pune": 12_000,
+    "mumbai": 15_000,
+    "nagpur": 10_000
+}
