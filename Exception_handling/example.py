@@ -11,3 +11,5 @@ except ValueError:
 else:
     print(f"the ans is: {ans}")
 
+finally:
+    print("program is end...")
