@@ -48,7 +48,7 @@ else:
 # If the file exists, print its contents.
 # Use finally to print:
 # Program execution completed.
-import json
+'''import json
 
 try:
     file_name = input("Enter a file name: ")
@@ -60,4 +60,34 @@ except FileNotFoundError:
     print("you have enter wrong file name")
 
 finally:
-    print("program executed successfully...")
+    print("program executed successfully...")'''
+
+
+# 🧩 Question: User Registration
+
+# Create a program that takes:
+
+# Name
+# Age
+# Email
+
+# Use try-except to handle:
+
+# ValueError → if age is not a number
+# TypeError → if an invalid operation occurs
+# # finally → print "Registration process completed."
+
+try:
+    name = input("enter your name: ")
+    age = int(input("enter your age: "))
+    email = input("enter your email: ")
+    print(f"name: {name} \nage: {age} \nemail: {email}")
+
+except ValueError:
+    print("enter a valid age...")
+
+except TypeError:
+    print("invalid operations occurs...")
+
+finally:
+    print("Registration process completed.")

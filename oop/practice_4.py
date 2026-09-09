@@ -112,7 +112,7 @@ p3 = Player("kalpesh",103)
 p1.get_info()'''
 
 # Q9 
-class Herbivore:
+'''class Herbivore:
     def eat_plants(self):
         print("Eats plants")
 
@@ -139,7 +139,65 @@ b1 = Bear("Bear")
 b1.get_info()
 b1.eat_plants()
 b1.eat_meat()
-b1.eat_both()
+b1.eat_both()'''
+
+# q10 
+# student managment system
+
+'''class Student:
+    def __init__(self,name,age,course,marks):
+        self.name = name
+        self.age = age
+        self.course = course
+        self.marks = marks
+
+    def display_info(self):
+        print(f"---WELCOME TO STUDENT MANAGMENT SYSTEM---")
+        print("---STUDENT DATA---")
+        print(f"name : {self.name} \nage : {self.age} \ncourse : {self.course} \nmarks: {self.marks}")
+
+    def is_pass(self):
+        if self.marks >= 40 and self.marks <= 100:
+            print(f"result: pass")
+        else:
+            print(f"result: fail")
+
+s1 = Student("kalpesh",20,"math",98)
+s1.display_info()
+s1.is_pass()'''
+
+
+# q11 
+class BankAccount:
+    def __init__(self, account_holder, account_number, balance):
+        self.account_holder = account_holder
+        self.account_number = account_number
+        self.balance = balance
+
+    def get_info(self):
+        print(f"account_holder: {self.account_holder} \naccount_number: {self.account_number} \nbalance: {self.balance}")
+
+    def deposite(self,money):
+        self.money = money
+        self.balance += money
+        print(f"{money} added successfully...")
+
+    def withdraw(self,amount):
+        self.amount= amount
+        if amount > self.balance:
+            print(f"{amount} not avaliable if account...")
+        else:
+            self.balance -= amount
+            print(f"{amount} withdraw successfully...")
+
+    def check_balance(self):
+        print(f"Current balance is : {self.balance}")
+
+acc1 = BankAccount("kalpesh",101, 500)
+acc1.deposite(500)
+acc1.withdraw(100)
+acc1.get_info()
+acc1.check_balance()
 
 
 
