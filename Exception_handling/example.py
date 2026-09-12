@@ -76,6 +76,7 @@ finally:
 # ValueError → if age is not a number
 # TypeError → if an invalid operation occurs
 # # finally → print "Registration process completed."
+# hii
 
 try:
     name = input("enter your name: ")
@@ -84,7 +85,7 @@ try:
     print(f"name: {name} \nage: {age} \nemail: {email}")
 
 except ValueError:
-    print("enter a valid age...")
+    print("youi have enter invalid age...")
 
 except TypeError:
     print("invalid operations occurs...")
